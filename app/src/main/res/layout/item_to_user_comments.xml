@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="com.watermelon.luomi.panda.utils.CommonUtils"></import>
+
+        <variable
+            name="floor"
+            type="java.lang.String"></variable>
+
+        <variable
+            name="comment"
+            type="com.watermelon.luomi.panda.net.CommentResponse.CommentsBean"></variable>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen16">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:imageUrl="@{comment.avatar}"
+                android:src="@drawable/head" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen8"
+                android:paddingRight="@dimen/dimen8"
+                android:text="@{comment.author}"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/reply_sign"
+                android:padding="@dimen/dimen2"
+                android:text="楼主"
+                android:textColor="@android:color/white" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></View>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="@{floor}" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{CommonUtils.formatDate(String.valueOf(comment.time))}" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen72"
+            android:paddingRight="@dimen/dimen64"
+            android:text="@{comment.content}"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dimen16" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen72"
+            android:paddingRight="@dimen/dimen16">
+
+            <View
+                android:layout_width="6px"
+                android:layout_height="match_parent"
+                android:background="@color/colorCommentLeft"></View>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorCommentRight"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dimen8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dimen4"
+                    android:paddingTop="@dimen/dimen4"
+                    android:text="引用 武斩的回复:"
+                    android:textColor="@color/colorCommentLeft"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dimen4"
+                    android:paddingTop="@dimen/dimen4"
+                    android:text="@{comment.content}"
+                    android:textColor="@color/colorCommentLeft"
+                    android:textStyle="italic|bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen16">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></View>
+
+            <TextView
+                android:id="@+id/reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_tag_background"
+                android:padding="@dimen/dimen4"
+                android:text="@string/reply" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorSplitLine"></View>
+    </LinearLayout>
+</layout>

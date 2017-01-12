@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorGray">#797979</color>
+    <color name="colorPerson">#02B7F0</color>
+    <color name="colorIcon">#e2e2e2</color>
+    <color name="colorTheme">#F8F8F8</color>
+    <color name="colorSplitLine">#DDDDDD</color>
+    <color name="colorTitleLine">#DBDBDB</color>
+    <color name="colorPage">#F3F2F6</color>
+    <color name="colorCommentLeft">#BCBCBC</color>
+    <color name="colorCommentRight">#EFEFF4</color>
+    <color name="colorTabActive">#027BFF</color>
+    <color name="colorLogin">#48A2FC</color>
+    <color name="colorLoginBackground">#f1f0f5</color>
+    <color name="colorLoginLine">#aaaaaa</color>
+</resources>

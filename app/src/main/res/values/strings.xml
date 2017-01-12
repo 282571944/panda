@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">maker</string>
+    <string name="app_url">http://news-at.zhihu.com/</string>
+    <string name="edit">编辑</string>
+    <string name="comment">评一下</string>
+    <string name="check_network">请检查网络</string>
+    <string name="newest">已经是最新数据</string>
+    <string name="no_more">没有更多数据</string>
+    <string name="login_please">请先登录</string>
+    <string name="account_login">请先登录一个账号</string>
+    <string name="cancel">取消</string>
+    <string name="comfirm">好的</string>
+    <string name="search_content">搜索栏目内容</string>
+    <string name="reply">回复</string>
+    <string name="news_title">文章标题:</string>
+    <string name="please_comment">输入评论...</string>
+    <string name="article_setting">文章设置</string>
+    <string name="recommend">推荐</string>
+    <string name="comment_do">评论</string>
+    <string name="please_edit_content">请编辑新闻内容</string>
+    <string name="phone_num">手机号</string>
+    <string name="password">密码</string>
+    <string name="enter_phone">请输入手机号</string>
+    <string name="enter_password">请输入密码</string>
+    <string name="replace_txt">1</string>
+    <string name="login">登录</string>
+    <string name="register"><u>注  册</u></string>
+    <string name="found_password"><u>找回密码</u></string>
+    <!--页面名称-->
+    <string name="tab1_name">创业新闻</string>
+    <string name="tab2_name">创业社区</string>
+    <string name="tab3_name">我</string>
+    <string name="tab4_name">创业网</string>
+    <string name="tab5_name">发布新闻</string>
+    <string name="tab6_name">查看帖子</string>
+    <string name="tab7_name">注册</string>
+    <string name="tab8_name">找回密码</string>
+
+</resources>

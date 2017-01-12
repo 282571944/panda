@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen80"
+        android:paddingRight="@dimen/dimen80"
+        android:paddingTop="@dimen/dimen16"
+        android:paddingBottom="@dimen/dimen16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/dimen2"
+            android:text="@string/login_please"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dimen20"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/dimen2"
+            android:text="@string/account_login"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dimen16"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorTheme"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:text="@string/cancel"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="@dimen/dimen16"
+            android:minWidth="200dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/colorTheme"></View>
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:text="@string/comfirm"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="@dimen/dimen16"
+            android:minWidth="200dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

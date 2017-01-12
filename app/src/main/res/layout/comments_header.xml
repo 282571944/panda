@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen16">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/head" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen8"
+            android:paddingRight="@dimen/dimen8"
+            android:text="武斩"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reply_sign"
+            android:padding="@dimen/dimen2"
+            android:text="楼主"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7月28日" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen16"
+        android:text="寻餐饮合伙人"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dimen16"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen20"
+        android:paddingRight="@dimen/dimen20"
+        android:text="你好,我们有专利的汽车防撞系统."
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dimen16" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen20"
+        android:layout_marginRight="@dimen/dimen20"
+        android:layout_marginTop="@dimen/dimen8"
+        android:adjustViewBounds="true"
+        android:src="@drawable/food" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen10"></View>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorSplitLine"></View>
+</LinearLayout>
